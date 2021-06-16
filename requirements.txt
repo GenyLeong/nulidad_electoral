@@ -6,6 +6,6 @@ pandas
 #zipfile already on python3
 pytesseract
 opencv-contrib-python-headless==4.4.0.46
-json
+#json
 xlrd # excel files
 openpyxl # excel files
