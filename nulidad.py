@@ -2287,7 +2287,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 24,
+   "execution_count": 34,
    "metadata": {},
    "outputs": [
     {
@@ -2311,7 +2311,6 @@
        "  <thead>\n",
        "    <tr style=\"text-align: right;\">\n",
        "      <th></th>\n",
-       "      <th>strCodExpedienteExt</th>\n",
        "      <th>ORGANIZACIÓN POLÍTICA</th>\n",
        "      <th>DEPARTAMENTO</th>\n",
        "      <th>ID</th>\n",
@@ -2323,7 +2322,6 @@
        "  <tbody>\n",
        "    <tr>\n",
        "      <th>18</th>\n",
-       "      <td>SEPEG.2021003983</td>\n",
        "      <td>FUERZA POPULAR</td>\n",
        "      <td>LORETO</td>\n",
        "      <td>PE-LOR</td>\n",
@@ -2333,7 +2331,6 @@
        "    </tr>\n",
        "    <tr>\n",
        "      <th>19</th>\n",
-       "      <td>SEPEG.2021003975</td>\n",
        "      <td>FUERZA POPULAR</td>\n",
        "      <td>LORETO</td>\n",
        "      <td>PE-LOR</td>\n",
@@ -2343,7 +2340,6 @@
        "    </tr>\n",
        "    <tr>\n",
        "      <th>20</th>\n",
-       "      <td>SEPEG.2021003966</td>\n",
        "      <td>FUERZA POPULAR</td>\n",
        "      <td>LORETO</td>\n",
        "      <td>PE-LOR</td>\n",
@@ -2353,7 +2349,6 @@
        "    </tr>\n",
        "    <tr>\n",
        "      <th>21</th>\n",
-       "      <td>SEPEG.2021003976</td>\n",
        "      <td>FUERZA POPULAR</td>\n",
        "      <td>LORETO</td>\n",
        "      <td>PE-LOR</td>\n",
@@ -2363,7 +2358,6 @@
        "    </tr>\n",
        "    <tr>\n",
        "      <th>22</th>\n",
-       "      <td>SEPEG.2021004036</td>\n",
        "      <td>FUERZA POPULAR</td>\n",
        "      <td>LORETO</td>\n",
        "      <td>PE-LOR</td>\n",
@@ -2379,11 +2373,9 @@
        "      <td>...</td>\n",
        "      <td>...</td>\n",
        "      <td>...</td>\n",
-       "      <td>...</td>\n",
        "    </tr>\n",
        "    <tr>\n",
        "      <th>1351</th>\n",
-       "      <td>SEPEG.2021004563</td>\n",
        "      <td>FUERZA POPULAR</td>\n",
        "      <td>CAJAMARCA</td>\n",
        "      <td>PE-CAJ</td>\n",
@@ -2393,7 +2385,6 @@
        "    </tr>\n",
        "    <tr>\n",
        "      <th>1352</th>\n",
-       "      <td>SEPEG.2021003044</td>\n",
        "      <td>FUERZA POPULAR</td>\n",
        "      <td>CAJAMARCA</td>\n",
        "      <td>PE-CAJ</td>\n",
@@ -2403,7 +2394,6 @@
        "    </tr>\n",
        "    <tr>\n",
        "      <th>1353</th>\n",
-       "      <td>SEPEG.2021002889</td>\n",
        "      <td>FUERZA POPULAR</td>\n",
        "      <td>CAJAMARCA</td>\n",
        "      <td>PE-CAJ</td>\n",
@@ -2413,7 +2403,6 @@
        "    </tr>\n",
        "    <tr>\n",
        "      <th>1354</th>\n",
-       "      <td>SEPEG.2021002886</td>\n",
        "      <td>FUERZA POPULAR</td>\n",
        "      <td>CAJAMARCA</td>\n",
        "      <td>PE-CAJ</td>\n",
@@ -2423,7 +2412,6 @@
        "    </tr>\n",
        "    <tr>\n",
        "      <th>1355</th>\n",
-       "      <td>SEPEG.2021003011</td>\n",
        "      <td>FUERZA POPULAR</td>\n",
        "      <td>CAJAMARCA</td>\n",
        "      <td>PE-CAJ</td>\n",
@@ -2433,22 +2421,22 @@
        "    </tr>\n",
        "  </tbody>\n",
        "</table>\n",
-       "<p>1203 rows × 7 columns</p>\n",
+       "<p>1203 rows × 6 columns</p>\n",
        "</div>"
       ],
       "text/plain": [
-       "     strCodExpedienteExt ORGANIZACIÓN POLÍTICA DEPARTAMENTO      ID  \\\n",
-       "18      SEPEG.2021003983        FUERZA POPULAR       LORETO  PE-LOR   \n",
-       "19      SEPEG.2021003975        FUERZA POPULAR       LORETO  PE-LOR   \n",
-       "20      SEPEG.2021003966        FUERZA POPULAR       LORETO  PE-LOR   \n",
-       "21      SEPEG.2021003976        FUERZA POPULAR       LORETO  PE-LOR   \n",
-       "22      SEPEG.2021004036        FUERZA POPULAR       LORETO  PE-LOR   \n",
-       "...                  ...                   ...          ...     ...   \n",
-       "1351    SEPEG.2021004563        FUERZA POPULAR    CAJAMARCA  PE-CAJ   \n",
-       "1352    SEPEG.2021003044        FUERZA POPULAR    CAJAMARCA  PE-CAJ   \n",
-       "1353    SEPEG.2021002889        FUERZA POPULAR    CAJAMARCA  PE-CAJ   \n",
-       "1354    SEPEG.2021002886        FUERZA POPULAR    CAJAMARCA  PE-CAJ   \n",
-       "1355    SEPEG.2021003011        FUERZA POPULAR    CAJAMARCA  PE-CAJ   \n",
+       "     ORGANIZACIÓN POLÍTICA DEPARTAMENTO      ID  \\\n",
+       "18          FUERZA POPULAR       LORETO  PE-LOR   \n",
+       "19          FUERZA POPULAR       LORETO  PE-LOR   \n",
+       "20          FUERZA POPULAR       LORETO  PE-LOR   \n",
+       "21          FUERZA POPULAR       LORETO  PE-LOR   \n",
+       "22          FUERZA POPULAR       LORETO  PE-LOR   \n",
+       "...                    ...          ...     ...   \n",
+       "1351        FUERZA POPULAR    CAJAMARCA  PE-CAJ   \n",
+       "1352        FUERZA POPULAR    CAJAMARCA  PE-CAJ   \n",
+       "1353        FUERZA POPULAR    CAJAMARCA  PE-CAJ   \n",
+       "1354        FUERZA POPULAR    CAJAMARCA  PE-CAJ   \n",
+       "1355        FUERZA POPULAR    CAJAMARCA  PE-CAJ   \n",
        "\n",
        "                   JURADO ELECTORAL           MATERIA      ESTADO  \n",
        "18                    ALTO AMAZONAS  MESA DE SUFRAGIO    RESUELTO  \n",
@@ -2463,10 +2451,10 @@
        "1354                          CHOTA  MESA DE SUFRAGIO    RESUELTO  \n",
        "1355                          CHOTA  MESA DE SUFRAGIO    RESUELTO  \n",
        "\n",
-       "[1203 rows x 7 columns]"
+       "[1203 rows x 6 columns]"
       ]
      },
-     "execution_count": 24,
+     "execution_count": 34,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -2480,7 +2468,7 @@
     "\n",
     "xls_FP = xls[find_partido]\n",
     "\n",
-    "columnas = ['strCodExpedienteExt','strOrganizacionPolitica', 'strDepartamento','ID',  'strJuradoElectoral', 'strMateria', 'strEstadoExped']\n",
+    "columnas = ['strOrganizacionPolitica', 'strDepartamento','ID',  'strJuradoElectoral', 'strMateria', 'strEstadoExped']\n",
     "df_tabla1 = pd.DataFrame(xls_FP, columns=columnas)\n",
     "\n",
     "df_tabla1 = df_tabla1.rename(columns={\"strOrganizacionPolitica\": \"ORGANIZACIÓN POLÍTICA\",\"strDepartamento\": \"DEPARTAMENTO\", \"strJuradoElectoral\":\"JURADO ELECTORAL\", 'strMateria': 'MATERIA', \"strEstadoExped\": \"ESTADO\"})\n",
@@ -2489,7 +2477,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 25,
+   "execution_count": 33,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -2498,7 +2486,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 26,
+   "execution_count": 35,
    "metadata": {},
    "outputs": [
     {
@@ -2782,7 +2770,7 @@
        "19                     0.0      43.0              0.0  "
       ]
      },
-     "execution_count": 26,
+     "execution_count": 35,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -2808,7 +2796,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 23,
+   "execution_count": 36,
    "metadata": {},
    "outputs": [
     {
@@ -2987,7 +2975,7 @@
        "[72 rows x 7 columns]"
       ]
      },
-     "execution_count": 23,
+     "execution_count": 36,
      "metadata": {},
      "output_type": "execute_result"
     }
