@@ -2,6 +2,7 @@ import requests
 import datetime as dt
 import pandas as pd
 import numpy as np
+import json
 
 # To add a new cell, type '# %%'
 # To add a new markdown cell, type '# %% [markdown]'
