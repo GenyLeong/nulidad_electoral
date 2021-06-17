@@ -187,7 +187,7 @@ regiones_pedidos = xls_FP.groupby(
 regiones_pedidos = regiones_pedidos.reset_index()
 regiones_pedidos = regiones_pedidos.fillna(0)
 regiones_pedidos = regiones_pedidos.rename(
-    columns={"strDepartamento": "DEPARTAMENTO"})
+    columns={"strDepartamento": "PROCEDENCIA",  "FUERZA POPULAR": "CANTIDAD"})
 #df_dpto_FP['DEPARTAMENTO'] = df_dpto_FP['DEPARTAMENTO'].str.capitalize()
 
 regiones_pedidos
@@ -250,3 +250,19 @@ df_dpto_PL
 
 # %%
 df_dpto_PL.to_csv('tabla_mapa_PL.csv', index=False)
+
+
+# %%
+regiones_pedidos_PL = xls_PL.groupby(
+    ['strDepartamento', 'strOrganizacionPolitica']).size().unstack()
+regiones_pedidos_PL = regiones_pedidos_PL.reset_index()
+regiones_pedidos_PL = regiones_pedidos_PL.fillna(0)
+regiones_pedidos_PL = regiones_pedidos_PL.rename(
+    columns={"strDepartamento": "PROCEDENCIA",  "PARTIDO POLITICO NACIONAL PERU LIBRE": "CANTIDAD"})
+#df_dpto_FP['DEPARTAMENTO'] = df_dpto_FP['DEPARTAMENTO'].str.capitalize()
+
+regiones_pedidos_PL
+
+
+# %%
+regiones_pedidos_PL.to_csv('pedidos_regiones_PL.csv', index=False)
