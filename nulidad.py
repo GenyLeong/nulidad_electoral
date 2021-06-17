@@ -1,12 +1,11 @@
-import requests
-import datetime as dt
-import pandas as pd
-import numpy as np
-import json
-
 # To add a new cell, type '# %%'
 # To add a new markdown cell, type '# %% [markdown]'
 # %%
+import numpy as np
+import pandas as pd
+import datetime as dt
+#import seaborn as sns
+#import codecs
 #import csv
 #from zipfile import ZipFile
 # from selenium import webdriver
@@ -18,7 +17,8 @@ import json
 # from selenium.common.exceptions import NoSuchElementException
 # from selenium.webdriver.support.expected_conditions import presence_of_element_located
 
-#import json
+import json
+import requests
 
 
 # %%
