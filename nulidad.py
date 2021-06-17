@@ -1,6 +1,4 @@
 import requests
-import codecs
-import seaborn as sns
 import datetime as dt
 import pandas as pd
 import numpy as np
