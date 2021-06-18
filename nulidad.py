@@ -266,3 +266,23 @@ regiones_pedidos_PL
 
 # %%
 regiones_pedidos_PL.to_csv('pedidos_regiones_PL.csv', index=False)
+
+
+# %%
+graficas_csv = pd.read_csv('nulidad_electoral - backup.csv')
+graficas_csv
+
+
+# %%
+razones_improcedencia = graficas_csv.groupby(
+    ['RAZON', 'DECISION']).size().unstack()
+razones_improcedencia = razones_improcedencia.reset_index()
+razones_improcedencia = razones_improcedencia.fillna(0)
+#razones_improcedencia = razones_improcedencia.rename(columns={"strDepartamento": "PROCEDENCIA",  "PARTIDO POLITICO NACIONAL PERU LIBRE": "CANTIDAD"})
+#df_dpto_FP['DEPARTAMENTO'] = df_dpto_FP['DEPARTAMENTO'].str.capitalize()
+
+razones_improcedencia
+
+
+# %%
+razones_improcedencia.to_csv('razones_improcedencia_FP.csv', index=False)
