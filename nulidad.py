@@ -199,11 +199,11 @@ regiones_pedidos.to_csv('pedidos_regiones_FP.csv', index=False)
 
 # %%
 find_partido = xls['strOrganizacionPolitica'] == 'FUERZA POPULAR'
-#find_materia = xls['strMateria'] == 'REGISTRADO'
-find_estado = xls['strEstadoExped'] == 'EN PRONUNCIAMIENTO'
+find_materia = xls['strMateria'] == 'APELACIÓN'
+find_estado = xls['strEstadoExped'] == 'RESUELTO'
 
 
-xls_FP = xls[find_partido & find_estado]
+xls_FP = xls[find_partido & find_materia & find_estado]
 
 columnas = ['strCodExpedienteExt', 'strOrganizacionPolitica', 'strDepartamento',
             'ID',  'strJuradoElectoral', 'strMateria', 'strEstadoExped']
