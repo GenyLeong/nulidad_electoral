@@ -145,6 +145,10 @@ xls.head(50)
 
 
 # %%
+xls.to_csv('resultado_total.csv', index=False)
+
+
+# %%
 
 find_partido = xls['strOrganizacionPolitica'] == 'FUERZA POPULAR'
 #find_materia = xls['strMateria'] == 'APELACIÓN'
